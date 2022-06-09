@@ -1,0 +1,163 @@
+
+form{
+    border: solid white;
+    border-radius: 20%;
+    height:430px;
+    width:500px;
+    background-color: white;
+    opacity: 90%;
+    color: black;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-style: italic;
+   text-align: left;
+   margin-left: 400px;
+   padding-left: 50px;
+   font-size: 15px;
+   font-style: bold;
+}
+ body{
+     /* background-color:lightpink;   */
+     /* background: linear-gradient(#feac5e,#c779d0,#4bc0c8);
+      */
+      /* background: linear-gradient(#1a2980,#26d0ce) */
+     
+       /* background: linear-gradient(#1fa2ff,#12d8fa,#a6ffcb); */
+       background: linear-gradient(#5c258d,#4389a2);
+} 
+textarea{
+    height: 100px;
+    width: 200px;
+}
+span{
+    color:deeppink;
+}
+h1{
+    color: blue;
+    font-family: cursive;
+    font-style: bold;
+    text-align: center;
+    
+}
+::placeholder{
+    color: rgba(15, 47, 228, 0.959);
+    font-style: italic;
+    font-size:15px;
+}
+input{
+    border: outset purple;
+    text-align: center;
+
+}
+textarea{
+    border: outset purple;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: larger;
+    background: linear-gradient(#5c258d,#4389a2);
+}
+.nm{
+    margin-left: 105px;
+}
+.pn{
+    margin-left: 15px;
+}
+.el{
+    margin-left: 100px;
+}
+/* .fd{ */
+    /* margin: 180px; */
+/* } */
+.ta{
+    margin-left: 140px;
+    
+
+}
+.cube{
+    margin-left: 75px;
+    margin-top: 5px;
+    position: relative;
+    width: 69px;
+    height: 69px;
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);  
+    animation: animate 4s linear infinite;
+}
+
+.cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    transform-style: preserve-3d;  
+}
+@keyframes animate{
+    0%{
+    transform: rotateX(-15deg) rotateY(0deg);
+    }
+    100%{
+    transform: rotateX(-15deg) rotateY(-360deg);
+    }
+}
+/* Logo color */
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(#151515,#00ecb1);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(34px);
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+    transform-style: preserve-3d;
+}
+/* Logo Text */
+.cube div span h2{
+    position: absolute;
+    font-size:40px;
+    color:rgb(211, 248, 253);
+    cursor: default;
+    transform: translateZ(20px);
+}
+.cube div span h2:nth-child(1){
+    transform: translateZ(0) translateY(20px);
+    color:rgba(0,0,0,0.1);
+    filter:blur(2px);
+}
+/* Logo top face */
+.top{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 69px;
+    height:69px;
+    border-radius: 5px;
+    background:  rgba(0, 15, 15, 0.836);
+    transform: rotateX(90deg) translateZ(34px);   
+}
+    
+.top::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:69px;
+    height: 69px;
+    background: #02ffc0;
+    transform: translateZ(-88px);
+    filter:blur(20px);
+    box-shadow: 0 0 28px rgba(0,255,179,0.2),           /* Logo shadow while rotating*/
+                0 0 32px rgba(0,255,179,0.4),
+                0 0 35px rgba(0,255,179,0.6),
+                0 0 37px rgba(0,255,179,0.8),
+                0 0 40px rgba(0,255,179,1);
+}
+label{
+    font-size: 20px;
+}

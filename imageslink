@@ -1,0 +1,35 @@
+ <!-- CODEKAFE HOMEPAGE -->
+ <!-- nav class -->
+ <img src="https://img.freepik.com/free-vector/programmer-s-workplace-writing-code-laptop_80328-238.jpg?t=st=1651953445~exp=1651954045~hmac=94af8b1ef85da2706a2dfb0cd5515ec0dc4d9040790cf9187145b5c65c829b72&w=740" alt="">
+                <img src="https://img.freepik.com/free-vector/programmers-during-coding-debugging-maintenance-software-testing-isometric-flowchart-blue_1284-29043.jpg?size=626&ext=jpg&uid=R69781483&ga=GA1.2.1940212855.1650786661">
+                <img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg&uid=R69781483&ga=GA1.2.1940212855.1650786661" alt="">
+                <img src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?t=st=1651953044~exp=1651953644~hmac=8168fe6e9d409a28adbe6f6c8c9193827fff9a91b3270861ab3bc9bc1bc2ebbb&w=740" alt="">
+                <!--  -->
+                background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&w=1000&q=80)
+                <!-- logo image -->
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png">
+                <!-- descbox -->
+                background-image: url(https://www.egeniq.com/sites/default/files/2020-06/frontend_webdeveloper.jpg)
+                <!-- descbox logo -->
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png">
+                background-image:url(https://img.freepik.com/free-vector/isometric-programmer-coding-new-project-web-development-programming-skills-website-web-banner-illustration-project-team-engineers-website-php-html-css-js_589019-3110.jpg?w=740);
+                <img id="Js" src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png"  >
+                <!-- Course page -->
+                <!-- video of the course page -->
+                 <video autoplay loop muted width="100%" height="900px">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <!-- Box1 -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpSNplRDNIKiwbm0RwtlY03_3I7mx9qrqxfQ&usqp=CAU"
+                alt="Check your connection">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTYWiT73Y9783RNS-aZt1_RZ8tIzeVAv350Q&usqp=CAU"
+                alt="Check your connection">
+                <!-- container2...box2 -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIePXjuoXA0xfFeDVzImo_-PQxJDoAxJfwbg&usqp=CAU"
+                alt="Check your connection">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEFuBnLlbw6x4dzFEiGMGBaUkFGIndMJ90YQ&usqp=CAU"
+                alt="Check your connection">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYAuEOZeGOsVPQJ_3P05bNNPRe-5HwSNjMPw&usqp=CAU"
+                alt="Check your connection">
+<!-- loginpage -->
+background-image:url("https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg");

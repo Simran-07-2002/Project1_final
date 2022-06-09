@@ -1,0 +1,735 @@
+/* URL for fonts taken from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+:root {
+    --blue: #0a7a90;
+    --green: #05e23c;
+    --logobgblue: #29eeee;
+    --logobgwhite: #b4b4b4b0;
+    --a: #0a7a90;
+}
+
+.dark {
+    --blue: #d40d4f;
+    --green: #09bbd3;
+    --logobgblue: #06ee1a;
+    --logobgwhite: #b6b4b4b0;
+    --a: #d40d4f;
+
+}
+
+* Header size/font/background color */ header {
+    width: 1332px;
+    height: 70px;
+    font-family: 'Roboto Slab', serif;
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    box-shadow: 4px 0px 0px rgb(8, 8, 8);
+
+}
+
+/*Quote color  */
+.c1 {
+    color: crimson;
+    font-size: 45px;
+}
+
+.c2 {
+    font-size: 45px;
+}
+
+#quote {
+    color: black;
+}
+
+/* Body font/background */
+body {
+    font-family: 'Roboto Slab', serif;
+     /* background: linear-gradient(200deg , #e9306d 50% ,  rgba(145, 54, 231, 0.921) 40% );  */
+    background: linear-gradient(30deg,#30e9c1 40% , var(--green) 50%,rgba(145, 54, 231, 0.921) );
+
+}
+
+/* Links property */
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* Programming Languages Header */
+#Languages {
+    color: aliceblue;
+    text-align: center;
+}
+
+/* Menu bar configuration */
+nav ul {
+    padding-left: 500px;
+    display: flex;
+}
+
+/* Lists bullet and other properties disabled */
+nav ul li {
+    list-style: none;
+
+}
+
+/* Logo margin,dimensions and animation */
+.cube {
+    margin-left: 75px;
+    margin-top: 5px;
+    position: relative;
+    width: 69px;
+    height: 69px;
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+    animation: animate 4s linear infinite;
+}
+
+.cube div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(-15deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(-15deg) rotateY(-360deg);
+    }
+}
+
+/* Logo color */
+.cube div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(#151515, #00ecb1);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(34px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+/* Logo Text */
+.cube div span h2 {
+    position: absolute;
+    font-size: 40px;
+    color: rgb(211, 248, 253);
+    cursor: default;
+    transform: translateZ(20px);
+}
+
+.cube div span h2:nth-child(1) {
+    transform: translateZ(0) translateY(20px);
+    color: rgba(0, 0, 0, 0.1);
+    filter: blur(2px);
+}
+
+/* Logo top face */
+.top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 69px;
+    height: 69px;
+    border-radius: 5px;
+    background: rgba(0, 15, 15, 0.836);
+    transform: rotateX(90deg) translateZ(34px);
+}
+
+.top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 69px;
+    height: 69px;
+    background: #02ffc0;
+    transform: translateZ(-88px);
+    filter: blur(20px);
+    box-shadow: 0 0 28px rgba(0, 255, 179, 0.2),
+        /* Logo shadow while rotating*/
+        0 0 32px rgba(0, 255, 179, 0.4),
+        0 0 35px rgba(0, 255, 179, 0.6),
+        0 0 37px rgba(0, 255, 179, 0.8),
+        0 0 40px rgba(0, 255, 179, 1);
+}
+
+/* Menu text border padding  */
+.menu ul li a {
+    display: flex;
+    width: 120px;
+    height: 15px;
+    position: relative;
+    background: #00ecb1;
+    padding: 20px 40px 10px 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu ul li a:before,
+.menu ul li a:after {
+    content: '';
+    position: absolute;
+    inset: 10px auto;
+    background: rgba(8, 230, 56, 0.6);
+    transition: 0.5s;
+}
+
+
+.menu ul li a:nth-child(1):before,
+.menu ul li a:nth-child(1):after {
+    background: linear-gradient(25deg, #02faa7d3, #0a7a90, #0a7a90, #00ec14);
+}
+
+
+.menu ul li a:hover:before {
+    inset: -3px;
+}
+
+.menu ul li a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+
+
+
+.menu a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--a);
+
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    margin-left: 5px;
+}
+
+h1 {
+    margin-left: 500px;
+    letter-spacing: 4px;
+    border: 2px whitesmoke;
+    border-radius: 4px;
+    margin-top: -10px;
+}
+
+
+
+/* main elements */
+.container1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.container2 {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* overflow: hidden; */
+}
+
+.container1 .box1 {
+    width: 37%;
+    height: 280px;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 36px;
+    font-family: Cookie;
+    box-shadow: 3px 2px 4px rgba(245, 245, 245, 0.416);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-right: 1px solid rgba(108, 234, 112, 0.588);
+    border-bottom: 1px solid rgba(199, 68, 235, 0.937);
+    border-radius: 20px;
+    backdrop-filter: blur(25px);
+    /* transform: rotate(5deg) skew(15deg) scale(0.8); */
+    transition: 0.8s;
+}
+
+.container2 .box2 {
+    width: 37%;
+    height: 280px;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 36px;
+    font-family: Cookie;
+    box-shadow: 3px 2px 4px rgba(245, 245, 245, 0.416);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(25px);
+    /* transform: rotate(5deg) skew(15deg) scale(0.8); */
+    transition: 0.8s;
+}
+h2 {
+    text-align: center;
+    font-size: 45px;
+    font-family: Cookie;
+    align-items: center;
+    justify-content: center;
+} 
+/* codes running in background */
+.hackedcode {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hackedcode h1 {
+    text-align: center;
+    font-size: 6rem;
+    font-family: Cookie;
+    background: #fff;
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+}
+.box1 {
+    width: 100%; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+    box-shadow: 0 0 4px 5px whitesmoke;
+}
+.box2{
+    width: 100%; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+    box-shadow: 0 0 4px 5px whitesmoke;
+}
+.html, .css, .js, .python, .c {
+    box-shadow: 0 0 4px 5px whitesmoke
+} 
+ 
+ 
+.box1 img{
+    width:100%;
+    height: 100%;
+    transition:0.5s;
+    
+}
+.box2 img{
+    width:100%;
+    height: 100%;
+    transition:0.5s;
+    
+}
+/* hover effect for box1 */
+
+ .box1:hover img:nth-child(4){
+    transform: translate(150px, -150px);
+    opacity: 1;
+}
+ .box1:hover img:nth-child(3){
+    transform: translate(120px, -120px);
+    opacity: 0.8;
+}
+
+.box1:hover img:nth-child(2){
+    transform: translate(80px, -80px);
+    opacity: 0.6;
+}
+.box1:hover img:nth-child(1){
+    transform: translate(120px, -120px);
+    opacity: 0.4;
+}
+
+/* hover effect for box2  */
+
+.box2:hover img:nth-child(4){
+    transform: translate(160px, -160px);
+    opacity: 1;
+}
+ .box2:hover img:nth-child(3){
+    transform: translate(120px, -120px);
+    opacity: 0.8;
+}
+
+.box2:hover img:nth-child(2){
+    transform: translate(80px, -80px);
+    opacity: 0.6;
+}
+.box2:hover img:nth-child(1){
+    transform: translate(120px, -120px);
+    opacity: 0.4;
+}
+ 
+
+/* Footer alignment and border */
+
+/* footer {
+    display: flex;
+    border-top: 2px solid whitesmoke;
+    width: 100%;
+    height: 140px;
+    background-color: rgba(2, 204, 240, 0.226);
+
+}
+
+/* Footer social media icons adjustment */
+/* footer .icons {
+    position: absolute;
+    display: flex;
+    margin-left: 1100px;
+    cursor: pointer;
+} */
+
+/* Footer Contact us Properties */
+/* footer h2 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 1055px;
+    font-size: 35px;
+    font-family: 'Roboto Slab';
+    color: white;
+} */
+
+/* Facebook Logo */
+/* footer .facebook {
+    margin: 3px;
+    margin-top: 100px;
+    padding-top: 3px;
+    overflow: hidden;
+    width: 40px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: aliceblue;
+    background: #013088;
+    box-shadow: 1px 2px 5px#effcf8;
+} */
+
+/* Linkedin Logo */
+/* footer .linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    margin-top: 100px;
+    width: 40px;
+    height: 38px;
+    font-family: 'Roboto';
+    font-size: 30px;
+    box-shadow: 1px 2px 5px white;
+    background: #0071b1;
+    border-radius: 5px;
+} */
+
+/* Instagram logo background blur ..... */
+/* section {
+    box-shadow: 1px 2px 5px white;
+    margin: 3px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom right, #001aff, #ff00c8 70%);
+    overflow: hidden;
+
+} */
+
+/* Instagram Logo second layer blur */
+/* section .color:nth-child(1) {
+    background: linear-gradient(to top right, #cefc00 20%, #9e037c 80%);
+    opacity: 0.6;
+    width: 40px;
+    height: 40px;
+} */
+
+/* Instagram logo outer borders.... */
+/* section .OuterBorder {
+    width: 28px;
+    height: 28px;
+    margin-left: 1px;
+    border-radius: 8px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+
+} */
+
+/* Instagram logo inner borders.... */
+/* section .OuterBorder .InnerBorder {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+} */
+
+/* Instagram Logo Dot */
+/* section .dot {
+    width: 3px;
+    height: 3px;
+    margin-top: -15px;
+    margin-left: 15px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}  */
+footer {
+    display: flex;
+    border-top: 2px solid whitesmoke;
+    width: 100%;
+    height: 224px;
+    background-color: var(--blue);
+    position: relative;
+    color: white;
+    overflow: hidden;
+    /* top: -55px; */
+    bottom: -8px;
+}
+.footerlogo{
+    position: relative;
+    top: 80px;
+    left: 70px;
+    font-size: 30px;
+    color: var(--flogo);
+}
+.VL1 h3{
+    position: relative;
+    top: 40px;
+    left: 200px;
+    display: block;
+    padding: 2px;
+    font-size: larger;
+    text-decoration: underline 2px;
+}
+
+.VL1 a{
+    position: relative;
+    top: 50px;
+    left: 200px;
+    display: block;
+    padding: 2px;
+    
+}
+.VL2 h3{
+    position: relative;
+    top: 40px;
+    left: 300px;
+    display: block;
+    padding: 2px;
+    font-size: larger;
+    text-decoration: underline 2px;
+}
+.VL2 a{
+    position: relative;
+    top: 50px;
+    left: 300px;
+    display: block;
+    padding: 2px;
+    
+}
+
+.VL3{
+    position: relative;
+    top: 80px;
+    left: 480px;
+    padding: 2px;
+}
+
+.VL3 p{
+    position: relative;
+    /* padding: 5px; */
+    top: -10px;
+    margin: 0px;
+}
+
+.feedback{
+    height:23px;
+    padding: 0;
+    margin: 0px;
+    position: absolute;   
+    top: 155px;
+    left: 88%;
+}
+/* Footer social media icons adjustment */
+footer .icons{
+    position: absolute;
+    display: flex;
+    left: 1100px;
+    top: -25px;
+    padding-left: 7px;
+    cursor:pointer;
+    
+}
+
+/* Footer Contact us Properties */
+footer h2{
+    top: -15px;
+    position: absolute;
+    left: 53%;
+    font-size: 35px;
+    font-family: 'Roboto Slab';
+    color: white ;
+    z-index: 50;
+    
+}
+
+/* Facebook Logo */
+footer .facebook{
+    margin:3px;
+    margin-top: 100px;
+    padding-top: 3px;
+    overflow: hidden;
+    width:40px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: aliceblue;
+    background:#013088 ;
+    box-shadow: 1px 2px 5px#effcf8;
+}
+
+/* Linkedin Logo */
+footer .linkedin{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:3px;
+    margin-top: 100px;
+    width:40px;
+    height:38px;
+    font-family: 'Roboto';
+    font-size: 30px;
+    box-shadow: 1px 2px 5px white;
+    background: #0071b1;
+    border-radius: 5px ;
+}
+
+/* Instagram logo background blur ..... */
+section {
+    box-shadow: 1px 2px 5px white;
+    margin:3px;
+    margin-top: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height:40px;
+    border-radius: 8px;
+    background:linear-gradient(to bottom right,#001aff,#ff00c8 70%);
+    overflow: hidden;
+    
+}
+/* Instagram Logo second layer blur */
+section .color:nth-child(1){
+    background: linear-gradient(to top right,#cefc00 20%,#9e037c 80% );
+    opacity: 0.6;
+    width: 40px;
+    height: 40px;
+}
+/* Instagram logo outer borders.... */
+section .OuterBorder{
+    width: 28px;
+    height:28px;
+    margin-left: 1px;
+    border-radius: 8px;
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+
+}
+
+/* Instagram logo inner borders.... */
+section .OuterBorder .InnerBorder{
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+}
+
+/* Instagram Logo Dot */
+section .dot{
+    width: 3px;
+    height:3px;
+    margin-top: -15px;
+    margin-left: 15px;
+    border-radius: 50%;
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
